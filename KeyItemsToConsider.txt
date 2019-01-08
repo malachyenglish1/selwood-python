@@ -1,0 +1,23 @@
+numpy - for use with data - numpy array - can be used to import flat files into an array 
+if all of the data is the same datatype (when using loadtext())
+
+pandas - dataframe
+
+context manager when dealing with files - what does this actually do/mean?  
+Use this to manage resources when opening files.  Will automatically close unused resources
+argparse
+
+json dictionaries.  It is natural to store JSONs in dictionaries as they 
+contain key-value pairs
+
+caching with python
+
+feather - to do with dataframes
+
+serializing inputs? pickling
+
+
+requests librbary - good for connecting to APIs etc
+
+json formatter in chrome (extension):
+Means we can more easily read jsons when looking at them in the browser
