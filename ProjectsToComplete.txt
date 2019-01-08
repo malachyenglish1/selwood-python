@@ -1,0 +1,18 @@
+
+Check for ratings changes over the past week
+
+Collect the credit curve for a given issuer
+
+Collect the CDS history, both 2- and 5-year, for a given issuer
+- map this
+- map the steepness
+
+Collect a history of all series a ticker was in
+
+Track ticker changes in Markit.  
+- highlight any changes that have happened over the past week
+
+Find which bespokes and tranches a ticker (or list of tickers) is in
+
+
+
