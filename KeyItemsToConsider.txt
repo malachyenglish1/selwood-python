@@ -5,6 +5,7 @@ pandas - dataframe
 
 context manager when dealing with files - what does this actually do/mean?  
 Use this to manage resources when opening files.  Will automatically close unused resources
+
 argparse
 
 json dictionaries.  It is natural to store JSONs in dictionaries as they 

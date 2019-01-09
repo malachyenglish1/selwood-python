@@ -1,0 +1,8 @@
+ElementTree and minidom are options
+
+https://www.guru99.com/manipulating-xml-with-python.html
+
+https://www.datacamp.com/community/tutorials/python-xml-elementtree
+
+https://www.w3schools.com/xml/xml_elements.asp
+

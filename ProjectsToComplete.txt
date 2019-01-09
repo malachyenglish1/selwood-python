@@ -14,5 +14,14 @@ Track ticker changes in Markit.
 
 Find which bespokes and tranches a ticker (or list of tickers) is in
 
+Track CDS basis
 
+Track prior equity performance as signal
 
+Fundamentals deterioration...  (leverage upticks, FCF coverage falling)
+
+Plot bond curve for issuer/industry to see where new issues are coming in
+
+Plot bond price moves...
+
+Track ticker changes
