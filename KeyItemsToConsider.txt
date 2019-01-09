@@ -21,3 +21,6 @@ requests librbary - good for connecting to APIs etc
 
 json formatter in chrome (extension):
 Means we can more easily read jsons when looking at them in the browser
+
+
+*** THis is a test line to make sure my code works
