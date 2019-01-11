@@ -25,3 +25,6 @@ Plot bond curve for issuer/industry to see where new issues are coming in
 Plot bond price moves...
 
 Track ticker changes
+
+Produce weekly report of what trades were put on in the last week
+
