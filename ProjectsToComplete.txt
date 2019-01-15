@@ -28,3 +28,5 @@ Track ticker changes
 
 Produce weekly report of what trades were put on in the last week
 
+Can I pull data from ISDA DC website to catch any new announcement?
+Maybe just look at changes in the week?

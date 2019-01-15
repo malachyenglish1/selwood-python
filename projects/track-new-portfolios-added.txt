@@ -1,0 +1,13 @@
+
+- pull the relevant xml/excel for all four funds
+
+- TradeReport has all of the trade descriptions (column F: 'Description') and maturities (column B: 'Maturity')
+- Column A ('TradeId') and fund ('') can be used to map to other reports
+
+- Produce an unique list of all TradeIds
+
+? How do I see how this compares to the last report ?
+
+- Just check the difference in TradeId's.  
+- Can then get a list of new ID's and can map add'l data that 
+we want from these IDs from other reports (or the DetailedReport)
