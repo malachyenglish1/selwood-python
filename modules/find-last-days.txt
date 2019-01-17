@@ -1,0 +1,6 @@
+create a module that finds:
+- today
+- the last trading day
+- the last day of the last week
+- the last day of the last month
+- the last day of the last year
