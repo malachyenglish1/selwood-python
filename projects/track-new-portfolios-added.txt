@@ -11,3 +11,14 @@
 - Just check the difference in TradeId's.  
 - Can then get a list of new ID's and can map add'l data that 
 we want from these IDs from other reports (or the DetailedReport)
+
+- Use the Trade file:
+
+- Simply pull the 'TradeID' and 'Trade Date'
+'Maturity', 'Counterparty', 'Description', 'Notional', 'InitialMargin', 'Attach', 'Detach'
+
+- Filter this on the date from last Fri
+
+- Use the Portfolio_Positions file in QUINTILLION\Update to pull the traded spread 
+(column I)
+

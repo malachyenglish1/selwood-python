@@ -6,3 +6,5 @@ https://www.datacamp.com/community/tutorials/python-xml-elementtree
 
 https://www.w3schools.com/xml/xml_elements.asp
 
+How do I pull xml items into a dataframe?
+

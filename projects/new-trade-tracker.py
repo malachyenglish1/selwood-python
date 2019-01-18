@@ -14,11 +14,13 @@ pd.options.display.max_rows = 999
 pd.options.display.max_columns = 999
 
 #The dates are now in datetime.date format
+print("Yesterday is: ", date.today() - timedelta(1))
 print("The most recent weekday is: ", flday.prev_weekday(date.today()))
 print("The most recent Friday is: ", flday.prev_friday(date.today()))
 
 # create a dictionary of days - key: relative day, value: the date
-key_dates = {"Last Day": flday.prev_weekday(date.today())
+key_dates = {"Yesterday": date.today() - timedelta(1)
+             ,"Last Day": flday.prev_weekday(date.today())
              ,"Last Friday": flday.prev_friday(date.today())}
 print(key_dates)
 
@@ -44,6 +46,7 @@ with open(trade_file, 'r') as f:
             'InitialMargin',
             'Attach',
             'Detach',
+            
             ]]
 #print(list(df.columns.values))
 print(df.head())
@@ -64,14 +67,20 @@ key_dates["Last Friday"] = np.datetime64(key_dates["Last Friday"])
 # converts column to datetime64[ns]
 #df['Trade Date'] = pd.to_datetime(df['Trade Date'])
 
+df_fri = df.loc[df['Trade Date'] > key_dates["Last Friday"]]
+df_last = df.loc[df['Trade Date'] == df['Trade Date'].max()]
 
-df2 = df.loc[df['Trade Date'] > key_dates["Last Friday"]]
-
-print(df2.shape)
-print(df2.head())
+print(df_fri.shape)
+print(df_last.shape)
+print(df_fri.head())
+print(df_last.head())
 
 #N.b. the file needs to be closed to overwrite.
 #Error handle this with user input
-df2.to_csv('Z:/Malachy/python/projects/new_trades.csv')
-df2[df2['Notional'] > 0].to_html('Z:/Malachy/python/projects/new_trades_longrisk.html')
-df2[df2['Notional'] < 0].to_html('Z:/Malachy/python/projects/new_trades_shortrisk.html')
+df_fri.to_csv('Z:/Malachy/python/projects/fri_trades.csv')
+#df_fri[df_fri['Notional'] > 0].to_html('Z:/Malachy/python/projects/fri_trades_longrisk.html')
+#df_fri[df_fri['Notional'] < 0].to_html('Z:/Malachy/python/projects/fri_trades_shortrisk.html')
+
+df_last.to_csv('Z:/Malachy/python/projects/new_trades.csv')
+df_last[df_last['Notional'] > 0].to_html('Z:/Malachy/python/projects/new_trades_longrisk.html')
+df_last[df_last['Notional'] < 0].to_html('Z:/Malachy/python/projects/new_trades_shortrisk.html')
